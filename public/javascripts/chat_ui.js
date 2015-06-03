@@ -1,4 +1,4 @@
-(function($) {
+
 	
 	function divEscapedContentElement(message) {
 		return $('<div></div>').text(message);
@@ -28,7 +28,7 @@
 
 	var socket = io.connect();
 
-	$(document).ready(function() {
+	jQuery(document).ready(function($) {
 		var chatApp = new Chat(socket);
 
 		socket.on('nameResult', function(result) {
@@ -70,18 +70,12 @@
 
 		});
 
-		setInterval(function() {
-			socket.emit('rooms');
-		}, 1000)
-
 		$('#send-message').focus();
 
 		$('#send-form').on('submit', function(evt) {
 			evt.preventDefault();
 			processUserInput(chatApp, socket);
 			return false;
-		})
+		});
 
 	});
-
-})(jQuery);

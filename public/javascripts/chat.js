@@ -1,5 +1,4 @@
-(function() {
-	'use strict';
+
 	var Chat = function(socket) {
 		this.socket = socket;
 	};
@@ -40,6 +39,4 @@
 		}
 
 		return message;
-	}
-
-})();
+	};
