@@ -1,0 +1,28 @@
+{
+  "name": "node-simple-chat",
+  "version": "0.0.0",
+  "description": "Project used to made nodejs' tests",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dkenzox/node-simple-chat.git"
+  },
+  "keywords": [
+    "test",
+    "nodejs",
+    "chat",
+    "socketio"
+  ],
+  "author": "Enzo Hernan Nicolorich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dkenzox/node-simple-chat/issues"
+  },
+  "dependencies": {
+    "mime": "^1.3.4",
+    "socket.io": "^1.3.5"
+  }
+}
