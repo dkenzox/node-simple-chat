@@ -1,2 +1,2 @@
 # node-simple-chat
-Project used to made nodejs' tests
+Project used to make nodejs' tests
